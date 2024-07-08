@@ -1,1 +1,97 @@
-Hello World
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="LucidDreaming: Controllable Object-Centric 3D Generation.">
+  <meta name="keywords" content="Trustworthy Machine Learning">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LucidDreaming: Controllable Object-Centric 3D Generation</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">LucidDreaming: Controllable Object-Centric 3D Generation</h1>
+          <!-- <h3 class="title is-4 publication-title">CVPR 2023</h3> -->
+          <div class="is-size-4 publication-authors">
+            <span class="author-block">
+              Anonymous</span>
+            <span class="author-block">
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+
+        <h2 class="title is-3">Framework</h2>
+        <div class="columns is-vcentered interpolation-panel">
+          <img src="./static/images/pipeline.png" style="width:100%;">
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            A high-level overview of <b>LucidDreaming</b> pipeline, controlling prompts are decomposed into 3D bounding boxes with LLMs, such as GPT4. Then in LucidDreaming, object-centric density bias and clipped ray sampling are used with Score Distillation Sampling (SDS) loss to align the generation with the user's control.
+          </p>
+        </div>
+        <br/>
+        <h2 class="title is-3">Demos</h2>
+        <h3 class="title is-4">Text-to-3D</h2>
+          Given a text prompts, we utilize a Language Model to convert it into bounding boxes and individual prompts. Then we can use them to generate 3D content align with the user's specifications. <br>
+        <video style="width: 120%; height: auto; display: block; margin: auto;" autoplay muted loop>
+          <source src="./static/images/video_grid.mp4" type="video/mp4">
+          Your browser does not support the video tag. <br>
+      </video>
+      <br>
+      <h2 class="title is-3">Other applications of our framework</h2>
+      <h3 class="title is-4">Image-to-3D demos</h2>
+        Our framework can also adapt to Image-to-3D generation, given bounding boxes and image conditioning. <br>
+      <video style="width: 90%; height: auto; display: block; margin: auto;" autoplay muted loop>
+        <source src="./static/images/zero_video_grid.mp4" type="video/mp4">
+        Your browser does not support the video tag. <br>
+    </video>
+    <br>
+    <h3 class="title is-4">Object placement demos</h2>
+      With ability to use bounding box to control 3D generation, we can also use it to place objects into existing scenes. <br>
+      We show examples of placing objects into NeRF scenes trained on synthetic dataset. <br>
+    <video style="width: 90%; height: auto; display: block; margin: auto;" autoplay muted loop>
+      <source src="./static/images/edit_video_grid.mp4" type="video/mp4">
+      Your browser does not support the video tag. <br>
+  </video>
+  <br>
+</html>
