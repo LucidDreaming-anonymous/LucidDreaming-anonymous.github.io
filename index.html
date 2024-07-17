@@ -62,7 +62,11 @@
         <h2 class="title is-3">Reseach Motivation</h2>
         <div class="content has-text-justified">
           <p>
-            We aim to develop a more accessible and precise method for controlling Text-to-3D generation, addressing the challenges faced by non-expert users in achieving accurate spatial and numerical control over multiple objects in 3D scenes with text prompts.          </p>
+            While text-based 3D generation has advanced significantly, people without any professional 3D editing experience would find it hard to achieve precise control over the 3D generation. Specifically, if there are complex relations in the prompt, such as spatial or numerical, purely using text to control often leads to missing objects and imprecise locations. 
+            <br>
+            <br>
+
+            In this paper, we aim to develop a more accessible and precise method for controlling Text-to-3D generation, addressing the challenges faced by non-expert users in achieving accurate spatial and numerical control over multiple objects in 3D scenes with text prompts.          </p>
         </div>
         <h2 class="title is-3">Framework</h2>
         <div class="columns is-vcentered interpolation-panel">
@@ -77,7 +81,7 @@
         <h2 class="title is-3">Demos</h2>
         <h3 class="title is-4">Text-to-3D</h2>
           Given a text prompts, we utilize a Language Model to convert it into bounding boxes and individual prompts. Then we can use them to generate 3D content align with the user's specifications. <br>
-        <video style="width: 120%; height: auto; display: block; margin: auto;" autoplay muted loop>
+        <video style="width: 90%; height: auto; display: block; margin: auto;" autoplay muted loop>
           <source src="./static/images/video_grid.mp4" type="video/mp4">
           Your browser does not support the video tag. <br>
       </video>
@@ -93,7 +97,9 @@
     <h3 class="title is-4">Object placement and edit demos</h2>
       With ability to use bounding box to control 3D generation, we can also use it to place objects into existing scenes(top two rows), and edit objects(bottom row). <br>
       We show examples of placing objects into NeRF scenes trained on synthetic dataset. <br>
-    <video style="width: 90%; height: auto; display: block; margin: auto;" autoplay muted loop>
+    
+    <br>
+      <video style="width: 70%; height: auto; display: block; margin: auto;" autoplay muted loop>
       <source src="./static/images/edit_video_grid.mp4" type="video/mp4">
       Your browser does not support the video tag. <br>
   </video>
